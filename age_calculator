@@ -15,7 +15,4 @@ def main():
     age = int((today - date_of_birth)/365.25)
     print("You are", age, " years old!")
 
-
-# Entry point
-if __name__ == "__main__":
 main()
