@@ -10,9 +10,9 @@ def ageCalculator(year, month, day):
 def main():
     st.title(' ofir Age Calculator')
     st.write("Welcome to the Age Calculator!")
-    day = st.int_input('Please enter your Birth Date (d or dd):')
-    month = st.int_input("Please enter your Birth Month (m or mm):")
-    year = st.int_input("Please enter your Birth Year (yyyy):")
+    day = st.int_input("Please enter your Birth Date:")
+    month = st.int_input("Please enter your Birth Month:")
+    year = st.int_input("Please enter your Birth Year:")
     ageCalculator(year, month, date)
     
 main()
