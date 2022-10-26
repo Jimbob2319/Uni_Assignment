@@ -1,7 +1,7 @@
 import streamlit as st
 import datetime
 
-def get_value(user_expr):
+def get_value(dd, mm, yyyy):
     """
     We use eval() to get the value of the expression.
     ref: https://docs.python.org/3/library/functions.html#eval
@@ -12,7 +12,7 @@ def get_value(user_expr):
     
 def main():
     st.title(' ofir Age Calculator')
-
+    
     # The input value from the user will be saved in user_expr.
     user_expr = st.int_input('Please enter your Date of Birth ("dd","mm","yyyy")')
     today = datetime.datetime.now().date()
