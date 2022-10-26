@@ -14,5 +14,6 @@ def main():
     date_of_birth = datetime.date(day,month,year)
     age = int((today - date_of_birth)/365.25)
     print("You are", age, " years old!")
+    break
 
 main()
