@@ -1,14 +1,5 @@
 import streamlit as st
 import datetime
-
-def get_value(dd, mm, yyyy):
-    """
-    We use eval() to get the value of the expression.
-    ref: https://docs.python.org/3/library/functions.html#eval
-    """
-    return eval(user_expr, {"__builtins__": None})
-
-
     
 def main():
     st.title(' ofir Age Calculator')
