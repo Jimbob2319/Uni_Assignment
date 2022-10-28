@@ -3,15 +3,13 @@ import datetime
     
 def ageCalculator(y, m, d):
     today = datetime.datetime.now().date()
-    dob = datetime.date(y,m,d)
-    age = int((today - date_of_birth).date/365.25)
+    age = int((today.year - dob.year).date/365.25)
     print("You are", age, " years old!")
     
 def main():
     st.title(' ofir Age Calculator')
     st.write("Welcome to the Age Calculator!")
-    d = st.int_input("Please enter your Birth Date:")
-    m = st.int_input("Please enter your Birth Month:")
-    y = st.int_input("Please enter your Birth Year:")
+    dob = st.date_input("Please enter your Birth Date:")
+
     ageCalculator(year, month, date)
 main()
