@@ -10,6 +10,6 @@ def main():
     st.title(' ofir Age Calculator')
     st.write("Welcome to the Age Calculator!")
     dob = st.date_input("Please enter your Birth Date:")
-
     ageCalculator()
+    
 main()
